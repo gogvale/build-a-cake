@@ -1,4 +1,7 @@
-<?php include 'include/header.php' ?>
+<?php
+// $title = "Lorem Ipsum";
+require 'include/header.php';
+?>
 <h1>Build a cake</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore, aperiam
     expedita tempora ducimus ab ipsam non neque libero commodi nulla quis tenetur
@@ -11,4 +14,4 @@
     Ipsam amet eius voluptatum enim provident. Accusantium consequuntur perspiciatis
     vitae laudantium aliquam!</p>
 
-<?php include 'include/footer.php' ?>
+<?php require 'include/footer.php' ?>
