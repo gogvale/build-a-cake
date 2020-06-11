@@ -18,6 +18,7 @@ include 'include/header.php';
     <br>
     <div hidden>
         <input type="text" name="tipo" value="<?= $_REQUEST['tipo'] ?>">
+        <?php if ($_REQUEST['tipo'] == 'canudo') $_REQUEST['num_camadas'] = "1";  ?>
         <input type="number" name="num_camadas" value="<?= $_REQUEST['num_camadas'] ?>">
 
         <input type="text" name="masa_1" value="<?= $_REQUEST['masa_1'] ?>">
