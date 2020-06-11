@@ -16,6 +16,23 @@ include 'include/header.php';
     <label for="phone-2">Telefono de Contacto 2</label>
     <input type="tel" name="phone-2" id="phone-2">
     <br>
+    <div hidden>
+        <input type="text" name="tipo" value="<?= $_REQUEST['tipo'] ?>">
+        <input type="number" name="num_camadas" value="<?= $_REQUEST['num_camadas'] ?>">
+
+        <input type="text" name="masa_1" value="<?= $_REQUEST['masa_1'] ?>">
+        <input type="text" name="calda" value="<?= $_REQUEST['calda'] ?>">
+
+        <?php if ($_REQUEST['num_camadas'] > 1) : ?>
+            <input type="text" name="masa_2" value="<?= $_REQUEST['masa_3'] ?>">
+            <input type="text" name="cob_1" value="<?= $_REQUEST['cob_1'] ?>">
+            <?php if ($_REQUEST['num_camadas'] > 2) : ?>
+                <input type="text" name="masa_3" value="<?= $_REQUEST['masa_3'] ?>">
+                <input type="text" name="cob_2" value="<?= $_REQUEST['cob_2'] ?>">
+            <?php endif ?>
+        <?php endif ?>
+
+    </div>
     <input type="submit" value="Enviar">
 </form>
 <?php include 'include/footer.php' ?>
