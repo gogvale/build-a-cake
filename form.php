@@ -25,7 +25,7 @@ include 'include/header.php';
         <input type="text" name="calda" value="<?= $_REQUEST['calda'] ?>">
 
         <?php if ($_REQUEST['num_camadas'] > 1) : ?>
-            <input type="text" name="masa_2" value="<?= $_REQUEST['masa_3'] ?>">
+            <input type="text" name="masa_2" value="<?= $_REQUEST['masa_2'] ?>">
             <input type="text" name="cob_1" value="<?= $_REQUEST['cob_1'] ?>">
             <?php if ($_REQUEST['num_camadas'] > 2) : ?>
                 <input type="text" name="masa_3" value="<?= $_REQUEST['masa_3'] ?>">
