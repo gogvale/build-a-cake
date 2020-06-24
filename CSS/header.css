@@ -40,16 +40,14 @@ header h2 {
   font-size: 10px;
   margin: 0 15px;
 }
-a {
+nav a {
   text-decoration: none;
-  color: hsl(0, 90%, 10%);
+  color: hsl(0, 0%, 69%);
+  margin: auto 10px;
 }
-a:hover {
+nav a.active {
+  color: black;
+}
+nav a:hover {
   color: hsl(0, 90%, 50%);
-}
-nav a::before {
-  content: "  |  ";
-}
-nav a:nth-child(1)::before {
-  content: "";
 }
