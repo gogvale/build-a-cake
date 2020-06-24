@@ -1,5 +1,4 @@
 <?php
-// $title = "Lorem Ipsum";
 require_once 'include/header.php';
 ?>
 
