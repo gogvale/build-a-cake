@@ -19,9 +19,11 @@
         <div class="pink banner">
             <h2>Build a Cake</h2>
             <div>
-                <select name="language" id="language">
+                <select name="language" id="language" onchange="document.location.href=this.value+'<?= $_SERVER['PHP_SELF'] ?>'">
                     <option selected disabled value="">🌐</option>
-                    <option value="pt-br">🇧🇷</option>
+                    <a href="/pt-br/#">
+                        <option value="pt-br">🇧🇷</option>
+                    </a>
                     <option value="es-mx">🇲🇽</option>
                     <option value="en">🇺🇸</option>
                 </select>
