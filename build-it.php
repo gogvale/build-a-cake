@@ -43,13 +43,11 @@ $sabores_masa = [
     <?php for ($j = 0; $j < 3; $j++) : ?>
         <div class="flow">
 
-            <div id="<?= "masa" . $j ?>" class="masa-pastel"></div>
+            <span id="<?= "masa" . $j ?>" class="masa-pastel"></span>
             <select name="<?= 'masa' . $j ?>">
                 <?php foreach ($sabores_masa as $i => $value) : ?>
-
                     <option style="background-color: <?= $value[0] ?>; color:white;" value="<?= $value[2]; ?>">
-                        <span>&#9711;</span> |
-                        <?= $value[1] ?>
+                        <?= "    " . $value[1] ?>
                     </option>
                 <?php endforeach ?>
             </select>

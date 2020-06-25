@@ -19,9 +19,6 @@ input[type="radio"] + label {
 div.flow {
   display: flex;
 }
-select {
-  display: block;
-}
 .masa-pastel {
   min-width: 20em;
   border: 1px solid black;
