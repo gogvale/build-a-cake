@@ -1,6 +1,7 @@
+<!-- Detects browser language and redirect to apropriate subdomain -->
 <?php
-// $title = "Lorem Ipsum";
-require_once 'include/header.php';
-require_once 'nav.php';
-?>
-<?php include 'include/footer.php' ?>
+$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+$acceptLang = ["en", "pt-br", "es-mx"];
+$lang = in_array($lang, $acceptLang) ? $lang : 'en';
+$url = "{$lang}/index.php";
+header("Location: $url");
