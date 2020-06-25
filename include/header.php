@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="/CSS/header.css" />
 </head>
 
-<?php $fileName = basename($_SERVER['PHP_SELF']);
+<?php
+$fileName = basename($_SERVER['PHP_SELF']);
+$subdomain = explode('/', $_SERVER['PHP_SELF'])[1];
+echo $subdomain;
 ?>
 
 <body>
@@ -20,12 +23,10 @@
             <h2>Build a Cake</h2>
             <div>
                 <select name="language" id="language" onchange="document.location.href='/'+this.value+'/<?= $fileName ?>'">
-                    <option selected disabled value="">🌐</option>
-                    <a href="/pt-br/#">
-                        <option value="pt-br">🇧🇷</option>
-                    </a>
-                    <option value="es-mx">🇲🇽</option>
-                    <option value="en">🇺🇸</option>
+                    <option <?php if ($subdomain == 'index.php') echo 'selected' ?> disabled value="">🌐</option>
+                    <option <?php if ($subdomain == 'pt-br') echo 'selected' ?> value="pt-br">🇧🇷</option>
+                    <option <?php if ($subdomain == 'es-mx') echo 'selected' ?> value="es-mx">🇲🇽</option>
+                    <option <?php if ($subdomain == 'en') echo 'selected' ?> value="en">🇺🇸</option>
                 </select>
             </div>
         </div>
