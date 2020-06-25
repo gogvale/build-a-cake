@@ -1,5 +1,5 @@
 <?php
-include 'include/header.php';
+include '../include/header.php';
 require_once 'nav.php';
 ?>
 <?php
@@ -8,7 +8,7 @@ $sabores_masa = [
     ["red", "Red Velvet", "red_velvet"]
 ];
 ?>
-<link rel="stylesheet" href="CSS/form.css">
+<link rel="stylesheet" href="/CSS/form.css">
 <form action="form.php">
     <!-- camada/canudo -->
     <div class="flow">
@@ -17,11 +17,11 @@ $sabores_masa = [
             <p>Selecciona el tipo de pastel:</p>
             <input required type="radio" name="formato" id="canudo">
             <label for="canudo">
-                <img src="IMG/canudo.svg" alt="canudo">
+                <img src="/IMG/canudo.svg" alt="canudo">
             </label>
             <input type="radio" name="formato" id="camadas">
             <label for="camadas">
-                <img src="IMG/camadas.svg" alt="camadas">
+                <img src="/IMG/camadas.svg" alt="camadas">
             </label>
         </div>
         <!-- tamanho -->
@@ -56,4 +56,4 @@ $sabores_masa = [
     <?php endfor ?>
 
 </form>
-<?php include 'include/footer.php' ?>
+<?php include '../include/footer.php' ?>

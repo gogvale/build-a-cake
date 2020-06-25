@@ -1,6 +1,6 @@
 <?php
 $title = "Formulario de Pruebas";
-require_once 'include/header.php';
+require_once '../include/header.php';
 require_once 'nav.php';
 
 ?>
@@ -38,4 +38,4 @@ require_once 'nav.php';
     </div>
     <input type="submit" value="Enviar">
 </form>
-<?php include 'include/footer.php' ?>
+<?php include '../include/footer.php' ?>
