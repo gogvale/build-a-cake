@@ -18,7 +18,14 @@
     <header>
         <div class="pink banner">
             <h2>Build a Cake</h2>
-            <a href="#">Idioma</a>
+            <div>
+                <select name="language" id="language">
+                    <option selected disabled value="">🌐</option>
+                    <option value="pt-br">🇧🇷</option>
+                    <option value="es-mx">🇲🇽</option>
+                    <option value="en">🇺🇸</option>
+                </select>
+            </div>
         </div>
         <div class="yellow banner">
             <nav>
