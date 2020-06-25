@@ -11,15 +11,20 @@
     <link rel="stylesheet" href="/CSS/header.css" />
 </head>
 
-<?php $fileName = $_SERVER['PHP_SELF']; ?>
-
+<?php $fileName = basename($_SERVER['PHP_SELF']);
+?>
+<pre>
+    <?=
+        $fileName;
+    ?>
+</pre>
 
 <body>
     <header>
         <div class="pink banner">
             <h2>Build a Cake</h2>
             <div>
-                <select name="language" id="language" onchange="document.location.href=this.value+'<?= $_SERVER['PHP_SELF'] ?>'">
+                <select name="language" id="language" onchange="document.location.href='/'+this.value+'/<?= $fileName ?>'">
                     <option selected disabled value="">🌐</option>
                     <a href="/pt-br/#">
                         <option value="pt-br">🇧🇷</option>
