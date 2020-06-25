@@ -1,5 +1,6 @@
 <?php
 include 'include/header.php';
+require_once 'nav.php';
 ?>
 <?php
 $sabores_masa = [

@@ -1,5 +1,6 @@
 <?php
-require 'include/mailSender.php';
+require_once 'include/mailSender.php';
+require_once 'nav.php';
 echo "<pre>";
 var_dump($_REQUEST);
 echo "</pre>";

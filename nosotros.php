@@ -1,6 +1,7 @@
 <?php
 // $title = "Lorem Ipsum";
-include 'include/header.php';
+require_once 'include/header.php';
+require_once 'nav.php';
 ?>
 <link rel="stylesheet" href="CSS/content.css">
 <div class="container">

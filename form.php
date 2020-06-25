@@ -1,6 +1,8 @@
 <?php
 $title = "Formulario de Pruebas";
-include 'include/header.php';
+require_once 'include/header.php';
+require_once 'nav.php';
+
 ?>
 
 <form method="POST" action="sendMail.php">
