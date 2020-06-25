@@ -1,9 +1,9 @@
 <div class="yellow banner">
     <nav>
-        <a <?php if ($fileName == '/es-mx/index.php') echo 'class="active"'; ?> href="index.php">Inicio</a>
-        <a <?php if ($fileName == '/es-mx/nosotros.php') echo 'class="active"'; ?> href="nosotros.php">Nosotros</a>
-        <a <?php if ($fileName == '/es-mx/galeria.php') echo 'class="active"'; ?> href="galeria.php">Galería</a>
-        <!-- <a <?php if ($fileName == '/es-mx/build-it.php') echo 'class="active"'; ?> href="build-it.php">Build It!</a> -->
+        <a <?php if ($_SERVER['PHP_SELF'] == '/es-mx/index.php') echo 'class="active"'; ?> href="index.php">Inicio</a>
+        <a <?php if ($_SERVER['PHP_SELF'] == '/es-mx/nosotros.php') echo 'class="active"'; ?> href="nosotros.php">Nosotros</a>
+        <a <?php if ($_SERVER['PHP_SELF'] == '/es-mx/galeria.php') echo 'class="active"'; ?> href="galeria.php">Galería</a>
+        <!-- <a <?php if ($_SERVER['PHP_SELF'] == '/es-mx/build-it.php') echo 'class="active"'; ?> href="build-it.php">Build It!</a> -->
     </nav>
     <div style="visibility:hidden" class="buttons">
         <a href="#">
