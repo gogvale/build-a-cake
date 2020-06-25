@@ -1,7 +1,15 @@
 <!-- Detects browser language and redirect to apropriate subdomain -->
-<?php
-$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-$acceptLang = ["en", "pt-br", "es-mx"];
-$lang = in_array($lang, $acceptLang) ? $lang : 'en';
-$url = "{$lang}/index.php";
-header("Location: $url");
+<script>
+    let language = navigator.language;
+    switch (true) {
+        case (language.startsWith("es")):
+            language = "es-mx";
+            break;
+        case (language.startsWith("pt")):
+            language = "pt-br";
+            break;
+        default:
+            language = "en";
+    }
+    document.location.href = `/${language}/`;
+</script>
