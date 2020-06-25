@@ -14,7 +14,6 @@
 <?php
 $fileName = basename($_SERVER['PHP_SELF']);
 $subdomain = explode('/', $_SERVER['PHP_SELF'])[1];
-echo $subdomain;
 ?>
 
 <body>
