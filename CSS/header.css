@@ -68,3 +68,6 @@ nav a:hover {
   text-indent: 1px;
   text-overflow: "";
 }
+select {
+  cursor: pointer;
+}
