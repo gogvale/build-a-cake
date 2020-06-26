@@ -1,6 +1,5 @@
 </body>
-<script src="/JS/modernizr-custom.js">
-</script>
+<script src="/JS/modernizr-custom.js"></script>
 <script>
     if (Modernizr.emoji) {
         console.log("Emoji Supported");

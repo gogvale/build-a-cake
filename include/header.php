@@ -19,7 +19,9 @@ $subdomain = explode('/', $_SERVER['PHP_SELF'])[1];
 <body>
     <header>
         <div class="pink banner">
-            <h2>Build a Cake</h2>
+            <a href="index.php">
+                <h2>Build a Cake</h2>
+            </a>
             <div>
                 <select name="language" id="language" onchange="document.location.href='/'+this.value+'/<?= $fileName ?>'">
                     <option <?php if ($subdomain == 'index.php') echo 'selected' ?> disabled value="">🌐</option>
