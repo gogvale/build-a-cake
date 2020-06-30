@@ -4,7 +4,6 @@
 $fileName = basename($_SERVER['PHP_SELF']);
 $subdomain = explode('/', $_SERVER['PHP_SELF'])[1];
 ?>
-<?= $subdomain ?>
 
 <head>
     <meta charset="UTF-8">
