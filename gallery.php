@@ -1,3 +1,4 @@
+<?php require "functions.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,14 +50,9 @@
                 </div><!-- End: Intro -->
                 <!-- Start: Photos -->
                 <div class="row photos" data-bss-baguettebox="">
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200325.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200326.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410%20(1).jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410-1.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410-2.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200412.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200412-1.jpeg" loading="lazy"></a></div>
+                    <?php foreach($gallery_array as $picture): ?>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery_path . $picture ?>"><img class="img-fluid" src="<?= $gallery_path . $picture ?>" loading="lazy"></a></div>
+                    <?php endforeach; ?>
                 </div><!-- End: Photos -->
             </div>
         </section><!-- End: Lightbox Gallery -->
