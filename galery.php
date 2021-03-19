@@ -19,21 +19,21 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-warning">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="index.html">Inicio</a></li><!-- End: Inicio -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="index.php">Inicio</a></li><!-- End: Inicio -->
                     <!-- Start: Sobre Nosotros -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.html">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.php">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
                     <!-- Start: Contacto -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="contact.html">Contacto</a></li><!-- End: Contacto -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="contact.php">Contacto</a></li><!-- End: Contacto -->
                     <!-- Start: Galeria -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="galery.html">Galería</a></li><!-- End: Galeria -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="galery.php">Galería</a></li><!-- End: Galeria -->
                     <!-- Start: Catalogo -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.html">Catálogo</a></li><!-- End: Catalogo -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.php">Catálogo</a></li><!-- End: Catalogo -->
                     <!-- Start: Cart -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.html">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">42</span>&nbsp;</a></li><!-- End: Cart -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">2</span>&nbsp;</a></li><!-- End: Cart -->
                 </ul>
             </div>
         </div>
@@ -49,14 +49,14 @@
                 </div><!-- End: Intro -->
                 <!-- Start: Photos -->
                 <div class="row photos" data-bss-baguettebox="">
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200325.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200326.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="loft.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410%20(1).jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="loft.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410-1.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410-2.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200412.jpeg" loading="lazy"></a></div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200412-1.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200325.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200326.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410%20(1).jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410-1.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200410-2.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200412.jpeg" loading="lazy"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/Galery/mariza-carioca_20200412-1.jpeg" loading="lazy"></a></div>
                 </div><!-- End: Photos -->
             </div>
         </section><!-- End: Lightbox Gallery -->

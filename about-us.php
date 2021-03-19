@@ -19,21 +19,21 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-warning">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="index.html">Inicio</a></li><!-- End: Inicio -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="index.php">Inicio</a></li><!-- End: Inicio -->
                     <!-- Start: Sobre Nosotros -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="about-us.html">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="about-us.php">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
                     <!-- Start: Contacto -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="contact.html">Contacto</a></li><!-- End: Contacto -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="contact.php">Contacto</a></li><!-- End: Contacto -->
                     <!-- Start: Galeria -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="galery.html">Galería</a></li><!-- End: Galeria -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="gallery.php">Galería</a></li><!-- End: Galeria -->
                     <!-- Start: Catalogo -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.html">Catálogo</a></li><!-- End: Catalogo -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.php">Catálogo</a></li><!-- End: Catalogo -->
                     <!-- Start: Cart -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.html">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">42</span>&nbsp;</a></li><!-- End: Cart -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">2</span>&nbsp;</a></li><!-- End: Cart -->
                 </ul>
             </div>
         </div>

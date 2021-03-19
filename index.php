@@ -19,25 +19,38 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-warning">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="index.html">Inicio</a></li><!-- End: Inicio -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="index.php">Inicio</a></li><!-- End: Inicio -->
                     <!-- Start: Sobre Nosotros -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.html">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.php">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
                     <!-- Start: Contacto -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="contact.html">Contacto</a></li><!-- End: Contacto -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="contact.php">Contacto</a></li><!-- End: Contacto -->
                     <!-- Start: Galeria -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="galery.html">Galería</a></li><!-- End: Galeria -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="gallery.php">Galería</a></li><!-- End: Galeria -->
                     <!-- Start: Catalogo -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.html">Catálogo</a></li><!-- End: Catalogo -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.php">Catálogo</a></li><!-- End: Catalogo -->
                     <!-- Start: Cart -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="cart.html">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">42</span>&nbsp;</a></li><!-- End: Cart -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">2</span>&nbsp;</a></li><!-- End: Cart -->
                 </ul>
             </div>
         </div>
-    </nav><!-- Start: Footer Basic -->
+    </nav><!-- Start: Avisos -->
+    <div class="simple-slider">
+        <!-- Start: Slideshow -->
+        <div class="swiper-container">
+            <!-- Start: Slide Wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Start: Slide -->
+                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+            </div><!-- End: Slide Wrapper -->
+        </div><!-- End: Slideshow -->
+    </div><!-- End: Avisos -->
+    <!-- Start: Content -->
+    <div class="container"></div><!-- End: Content -->
+    <!-- Start: Footer Basic -->
     <footer class="footer-basic">
         <!-- Start: Social Icons -->
         <div class="social"><a href="https://www.instagram.com/mariza.carioca/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/cariocalanchesmty" target="_blank"><i class="icon ion-social-facebook"></i></a></div><!-- End: Social Icons -->
