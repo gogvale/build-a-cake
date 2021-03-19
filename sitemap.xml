@@ -10,9 +10,15 @@
         <loc>/catalog.html</loc>
     </url>
     <url>
+        <loc>/contact.html</loc>
+    </url>
+    <url>
         <loc>/galery.html</loc>
     </url>
     <url>
         <loc>/index.html</loc>
+    </url>
+    <url>
+        <loc>/product.html</loc>
     </url>
 </urlset>
