@@ -1,4 +1,3 @@
-<?php require "resources/functions.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
 </head>
 
-<body>
+<body><?php require "resources/functions.php"; ?>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-warning">
-        <div class="container-fluid"><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><?php 
+require "resources/Cart.php";
+?>
+<a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
@@ -34,7 +36,11 @@
                     <!-- Start: Catalogo -->
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="catalog.php">Catálogo</a></li><!-- End: Catalogo -->
                     <!-- Start: Cart -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<span class="badge rounded-pill bg-danger">2</span>&nbsp;</a></li><!-- End: Cart -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<?php if(!$cart->empty()): ?>
+    <span class="badge rounded-pill bg-danger">
+        <?= $cart->size() ?>
+    </span>
+<?php endif ?>&nbsp;</a></li><!-- End: Cart -->
                 </ul>
             </div>
         </div>
@@ -46,14 +52,12 @@
                 <!-- Start: Intro -->
                 <div class="intro">
                     <h2 class="text-center">Galería</h2>
-                    <p class="text-center">Para más fotos, síguenos en <span><a href="https://www.instagram.com/mariza.carioca/">Instagram</a></span></p>
+                    <p class="text-center" target="_blank">Para más fotos, síguenos en&nbsp;<a href="https://www.instagram.com/mariza.carioca/" target="_blank">Instagram</a></p>
                 </div><!-- End: Intro -->
                 <!-- Start: Photos -->
-                <div class="row photos" data-bss-baguettebox="">
-                    <?php foreach($gallery_array as $picture): ?>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery_path . $picture ?>"><img class="img-fluid" src="<?= $gallery_path . $picture ?>" loading="lazy"></a></div>
-                    <?php endforeach; ?>
-                </div><!-- End: Photos -->
+                <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery_array as $picture): ?>
+    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery_path . $picture ?>"><img class="img-fluid" src="<?= $gallery_path . $picture ?>" loading="lazy"></a></div>
+<?php endforeach; ?></div><!-- End: Photos -->
             </div>
         </section><!-- End: Lightbox Gallery -->
     </div><!-- Start: Footer Basic -->

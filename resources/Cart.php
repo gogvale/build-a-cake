@@ -8,6 +8,9 @@ class Cart{
     function size(){
         return count($this->items);
     }
+    function empty(){
+        return count($this->items) == 0;
+    }
 
     function items(){
         return $this->items;
@@ -17,3 +20,5 @@ class Cart{
     }
 
 }
+
+$cart = new Cart;
