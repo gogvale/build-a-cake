@@ -66,8 +66,10 @@ require_once "resources/Cart.php";
                 </div><!-- End: Intro -->
                 <!-- Start: Photos -->
                 <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery->array as $picture): ?>
-    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path . $picture ?>" loading="lazy"></a></div>
-<?php endforeach; ?></div><!-- End: Photos -->
+    <figure class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path . $picture ?>" loading="lazy"></a></figure>
+<?php endforeach; ?>
+
+</div><!-- End: Photos -->
             </div>
         </section><!-- End: Lightbox Gallery -->
     </div><!-- Start: Footer Basic -->
