@@ -71,38 +71,15 @@ require "resources/Cart.php";
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($cart->items() as $item) : ?>
                         <tr>
                             <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg"></td>
                             <td>Pastel de Chocolate</td>
                             <td>$200.00</td>
                             <td style="text-align: center;">
-                                <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm(&quot;Seguro desea borrar el producto?&quot;)">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
+                                <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm('Seguro desea borrar el producto?')">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
                             </td>
-                        </tr>
-                        <tr>
-                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg"></td>
-                            <td>Pastel de Chocolate</td>
-                            <td>$200.00</td>
-                            <td style="text-align: center;">
-                                <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm(&quot;Seguro desea borrar el producto?&quot;)">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg"></td>
-                            <td>Pastel de Chocolate</td>
-                            <td>$200.00</td>
-                            <td style="text-align: center;">
-                                <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm(&quot;Seguro desea borrar el producto?&quot;)">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg"></td>
-                            <td>Pastel de Chocolate</td>
-                            <td>$200.00</td>
-                            <td style="text-align: center;">
-                                <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm(&quot;Seguro desea borrar el producto?&quot;)">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
-                            </td>
-                        </tr>
+                        </tr><?php endforeach ?>
                     </tbody>
                 </table>
             </div>
