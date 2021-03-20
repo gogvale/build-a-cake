@@ -37,7 +37,20 @@
                 </ul>
             </div>
         </div>
-    </nav><!-- Start: Footer Basic -->
+    </nav><!-- Start: Contact Form Clean -->
+    <section class="contact-clean">
+        <form method="post" action="resources/send-contact-mail.html">
+            <h2 class="text-center">Contáctanos</h2><!-- Start: Nombre -->
+            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre Completo"></div><!-- End: Nombre -->
+            <!-- Start: Teléfono -->
+            <div class="mb-3"><input class="form-control" type="tel" placeholder="Telefono Celular (opcional)" name="celular"></div><!-- End: Teléfono -->
+            <!-- Start: Correo -->
+            <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Correo Electrónico*" required=""></div><!-- End: Correo -->
+            <div class="mb-3"><textarea class="form-control" name="message" placeholder="Mensaje*" rows="14" required=""></textarea></div><small class="d-lg-flex justify-content-lg-end">* Campos Obligatorios</small>
+            <div class="mb-3"><button class="btn btn-primary" type="submit">Enviar</button></div>
+        </form>
+    </section><!-- End: Contact Form Clean -->
+    <!-- Start: Footer Basic -->
     <footer class="footer-basic">
         <!-- Start: Social Icons -->
         <div class="social"><a href="https://www.instagram.com/mariza.carioca/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/cariocalanchesmty" target="_blank"><i class="icon ion-social-facebook"></i></a></div><!-- End: Social Icons -->
