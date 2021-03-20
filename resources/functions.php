@@ -1,9 +1,12 @@
 <?php
-function non_hidden($string){
-    return $string[0]!=".";
+
+function non_hidden($string)
+{
+    return $string[0] != ".";
 }
 
-function list_images($dir){
+function list_images($dir)
+{
     // Open a known directory, and proceed to read its contents
     $dir_list = [];
     if (is_dir($dir)) {
@@ -14,7 +17,7 @@ function list_images($dir){
             closedir($dh);
         }
     }
-    $dir_list = array_filter($dir_list,"non_hidden");
+    $dir_list = array_filter($dir_list, "non_hidden");
     return $dir_list;
 }
 

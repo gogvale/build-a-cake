@@ -22,8 +22,9 @@
 
 require "Email.php";
 
-function sanitize_input($string){
-    return htmlspecialchars($string,ENT_QUOTES);
+function sanitize_input($string)
+{
+    return htmlspecialchars($string, ENT_QUOTES);
 }
 
 $name =  sanitize_input($_POST['name']);
@@ -42,16 +43,16 @@ Mensaje:
 
 EOL;
 
-$email = new Email("Contáctanos - Build-a-cake",$body);
+$email = new Email("Contáctanos - Build-a-cake", $body);
 $email_sent = $email->send_email();
 ?>
 
-<?php if($email_sent): ?>
+<?php if ($email_sent) : ?>
     <div style="padding: 10em;">
         <h1 class="text-center">¡Mensaje enviado con éxito!</h1>
         <p class="text-center">Da click <a href="../index.php">aquí</a> para regresar a la página inicial</p>
     </div>
-<?php else: ?>
+<?php else : ?>
     <div style="padding: 10em;">
         <h1 class="text-center">Ocurrió un problema</h1>
         <p class="text-center">Da click <a href="../index.php">aquí</a> para regresar a la página inicial</p>

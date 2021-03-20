@@ -1,6 +1,7 @@
 <?php
 
-class Email{
+class Email
+{
     public $recipient = "mogvale@gmail.com";
     public $subject;
     public $body;
@@ -18,8 +19,8 @@ class Email{
         $this->headers = implode("\r\n", $headers);
     }
 
-    function send_email(){
+    function send_email()
+    {
         return mail($this->recipient, $this->subject, $this->body, $this->headers);
     }
-
 }

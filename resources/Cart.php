@@ -1,24 +1,26 @@
 <?php
 
-class Cart{
-    private $items = [];
+class Cart
+{
+    private $items = [1,2,3,4];
     
-    function __construct(){}
-
-    function size(){
+    function size()
+    {
         return count($this->items);
     }
-    function empty(){
+    function empty()
+    {
         return count($this->items) == 0;
     }
 
-    function items(){
+    function items()
+    {
         return $this->items;
     }
-    function add($item_id){
+    function add($item_id)
+    {
         return $this->items[] = $item_id;
     }
-
 }
 
-$cart = new Cart;
+$cart = new Cart();

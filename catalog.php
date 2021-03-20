@@ -45,8 +45,8 @@ require "resources/Cart.php";
                     <!-- Start: Catalogo -->
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="catalog.php">Catálogo</a></li><!-- End: Catalogo -->
                     <!-- Start: Cart -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;<?php if(!$cart->empty()): ?>
-    <span class="badge rounded-pill bg-danger">
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i><?php if(!$cart->empty()): ?>
+    <span id="cart-count" class="badge rounded-pill bg-success">
         <?= $cart->size() ?>
     </span>
 <?php endif ?>&nbsp;</a></li><!-- End: Cart -->
