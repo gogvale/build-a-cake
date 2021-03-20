@@ -74,7 +74,7 @@ require_once "resources/Cart.php";
                     <tbody>
                         <?php foreach ($cart->items() as $item) : ?>
                         <tr>
-                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg"></td>
+                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg"></td>
                             <td>Pastel de Chocolate</td>
                             <td>$200.00</td>
                             <td style="text-align: center;">

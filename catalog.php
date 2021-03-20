@@ -69,7 +69,7 @@ require_once "resources/Cart.php";
         <div class="row g-0 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -79,7 +79,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -89,7 +89,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -99,7 +99,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -109,7 +109,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -119,7 +119,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -129,7 +129,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -139,7 +139,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -149,7 +149,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
@@ -159,7 +159,7 @@ require_once "resources/Cart.php";
             </div>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Galery/mariza-carioca_20200613-1.jpeg">
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
                         <h4 class="card-title">Pastel de Chocolate</h4>
                         <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
                         <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>

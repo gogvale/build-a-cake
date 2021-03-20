@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
 </head>
 
-<body><?php require "resources/functions.php"; ?>
+<body><?php require "resources/Gallery.php"; ?>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-danger bg-gradient">
         <div class="container-fluid">
             <!-- Start: Load Cart --><?php 
@@ -65,8 +65,8 @@ require_once "resources/Cart.php";
                     <p class="text-center" target="_blank">Para más fotos, síguenos en&nbsp;<a href="https://www.instagram.com/mariza.carioca/" target="_blank">Instagram</a></p>
                 </div><!-- End: Intro -->
                 <!-- Start: Photos -->
-                <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery_array as $picture): ?>
-    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery_path . $picture ?>"><img class="img-fluid" src="<?= $gallery_path . $picture ?>" loading="lazy"></a></div>
+                <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery->array as $picture): ?>
+    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path . $picture ?>" loading="lazy"></a></div>
 <?php endforeach; ?></div><!-- End: Photos -->
             </div>
         </section><!-- End: Lightbox Gallery -->
