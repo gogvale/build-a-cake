@@ -20,3 +20,8 @@ function list_images($dir){
 
 $gallery_path = "./assets/img/Galery/";
 $gallery_array = list_images($gallery_path);
+sort($gallery_array);
+
+// echo "<pre>";
+// var_dump($gallery_array);
+// echo "</pre>";
