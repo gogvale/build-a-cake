@@ -28,10 +28,11 @@
 
 <body><?php require "resources/functions.php"; ?>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-danger bg-gradient">
-        <div class="container-fluid"><?php 
-require "resources/Cart.php";
+        <div class="container-fluid">
+            <!-- Start: Load Cart --><?php 
+require_once "resources/Cart.php";
 ?>
-<a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
