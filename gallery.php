@@ -27,7 +27,7 @@
 </head>
 
 <body><?php require "resources/functions.php"; ?>
-    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-warning">
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-danger bg-gradient">
         <div class="container-fluid"><?php 
 require "resources/Cart.php";
 ?>
