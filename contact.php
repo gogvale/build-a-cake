@@ -30,7 +30,7 @@ require "resources/Cart.php";
                     <!-- Start: Sobre Nosotros -->
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.php">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
                     <!-- Start: Contacto -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="contact.php">Contacto</a></li><!-- End: Contacto -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="contact.php">Contáctanos</a></li><!-- End: Contacto -->
                     <!-- Start: Galeria -->
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="gallery.php">Galería</a></li><!-- End: Galeria -->
                     <!-- Start: Catalogo -->
