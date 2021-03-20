@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>/resources/send-contact-mail.php</loc>
+        <loc>http://buildacakemty.com/resources/send-contact-mail.php</loc>
     </url>
     <url>
-        <loc>/about-us.php</loc>
+        <loc>http://buildacakemty.com/about-us.php</loc>
     </url>
     <url>
-        <loc>/cart.php</loc>
+        <loc>http://buildacakemty.com/cart.php</loc>
     </url>
     <url>
-        <loc>/catalog.php</loc>
+        <loc>http://buildacakemty.com/catalog.php</loc>
     </url>
     <url>
-        <loc>/contact.php</loc>
+        <loc>http://buildacakemty.com/contact.php</loc>
     </url>
     <url>
-        <loc>/gallery.php</loc>
+        <loc>http://buildacakemty.com/gallery.php</loc>
     </url>
     <url>
-        <loc>/index.php</loc>
+        <loc>http://buildacakemty.com/index.php</loc>
     </url>
     <url>
-        <loc>/product.php</loc>
+        <loc>http://buildacakemty.com/product.php</loc>
     </url>
 </urlset>

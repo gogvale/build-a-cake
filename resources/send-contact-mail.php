@@ -27,21 +27,22 @@ function sanitize_input($string){
 }
 
 $name =  sanitize_input($_POST['name']);
-$email =  sanitize_input($_POST['email']);
+$to =  sanitize_input($_POST['email']);
 $celular =  sanitize_input($_POST['celular']);
 $message =  sanitize_input($_POST['message']);
 
 
 $body = <<<EOL
 Nombre: {$name}
-Correo: {$email}
+Correo: {$to}
 Celular: {$celular}
 
 Mensaje:
 {$message}
 
 EOL;
-$email = new Email($email,"Contáctanos - Build-a-cake",$body);
+
+$email = new Email("Contáctanos - Build-a-cake",$body);
 $email_sent = $email->send_email();
 ?>
 
