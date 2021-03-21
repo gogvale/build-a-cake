@@ -21,7 +21,6 @@
 <?php
 
 require "Email.php";
-require "Ciudades.php";
 
 function sanitize_input($string)
 {
@@ -31,30 +30,20 @@ function sanitize_input($string)
 $_SESSION['name'] = $name =  sanitize_input($_POST['name']);
 $_SESSION['from'] = $from =  sanitize_input($_POST['email']);
 $_SESSION['phone'] = $phone =  sanitize_input($_POST['phone']);
-
-if(isset($_POST['mobile']))
-    $mobile =  "celular";
-else
-    $mobile = "fijo"; 
-
-$message =  sanitize_input($_POST['details']);
-$city_id =  sanitize_input($_POST['city']);
+$message =  sanitize_input($_POST['message']);
 
 
 $body = <<<EOL
 Nombre: {$name}
-Celular: {$phone} ({$mobile})
 Correo: {$from}
-Ciudad: {$ciudades[$city_id]}
+Celular: {$phone}
 
-Detalles adicionales:
+Mensaje:
 {$message}
 
 EOL;
 
-// TODO: Agregar detalhes do pedido ao corpo da mensagem
-
-$email = new Email("Nuevo Pedido - Build-a-cake", $body);
+$email = new Email("Contáctanos - Build-a-cake", $body);
 $email_sent = $email->send_email();
 ?>
 

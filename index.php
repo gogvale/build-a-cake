@@ -31,6 +31,7 @@
         <div class="container-fluid">
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
+session_start();
 ?>
 <!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -61,13 +62,13 @@ require_once "resources/Cart.php";
             <!-- Start: Slide Wrapper -->
             <div class="swiper-wrapper">
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
             </div><!-- End: Slide Wrapper -->
             <!-- Start: Pagination -->
             <div class="swiper-pagination"></div><!-- End: Pagination -->
