@@ -31,7 +31,6 @@
         <div class="container-fluid">
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
-session_start();
 ?>
 <!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -59,11 +58,11 @@ session_start();
     <section class="contact-clean">
         <form method="post" action="resources/send-contact-mail.php">
             <h2 class="text-center">Contáctanos</h2><!-- Start: Nombre -->
-            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre Completo" value="<?= $_SESSION['name'] ?? "" ?>"></div><!-- End: Nombre -->
+            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre Completo"></div><!-- End: Nombre -->
             <!-- Start: Teléfono -->
-            <div class="mb-3"><input class="form-control" type="tel" placeholder="Telefono Celular (opcional)" name="phone" value="<?= $_SESSION['phone'] ?? "" ?>"></div><!-- End: Teléfono -->
+            <div class="mb-3"><input class="form-control" type="tel" placeholder="Telefono Celular (opcional)" name="phone"></div><!-- End: Teléfono -->
             <!-- Start: Correo -->
-            <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Correo Electrónico*" required="" value="<?= $_SESSION['from'] ?? "" ?>"></div><!-- End: Correo -->
+            <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Correo Electrónico*" required=""></div><!-- End: Correo -->
             <div class="mb-3"><textarea class="form-control" name="message" placeholder="Mensaje*" rows="14" required=""></textarea></div><small class="d-lg-flex justify-content-lg-end">* Campos Obligatorios</small>
             <div class="mb-3"><button class="btn btn-primary" type="submit">Enviar</button></div>
         </form>

@@ -28,9 +28,9 @@ function sanitize_input($string)
     return htmlspecialchars($string, ENT_QUOTES);
 }
 
-$_SESSION['name'] = $name =  sanitize_input($_POST['name']);
-$_SESSION['from'] = $from =  sanitize_input($_POST['email']);
-$_SESSION['phone'] = $phone =  sanitize_input($_POST['phone']);
+$name =  sanitize_input($_POST['name']);
+$from =  sanitize_input($_POST['email']);
+$phone =  sanitize_input($_POST['phone']);
 
 if(isset($_POST['mobile']))
     $mobile =  "celular";

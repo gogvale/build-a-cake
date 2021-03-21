@@ -31,7 +31,6 @@
         <div class="container-fluid">
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
-session_start();
 ?>
 <!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -81,13 +80,13 @@ session_start();
                     <!-- Start: Contact Form Clean -->
                     <section class="contact-clean" style="padding: 2em 0;">
                         <!-- Start: Nombre -->
-                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre*" required="" value="<?= $_SESSION['name'] ?? "" ?>"></div><!-- End: Nombre -->
+                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre*" required=""></div><!-- End: Nombre -->
                         <!-- Start: Teléfono -->
-                        <div class="mb-3"><input class="form-control" type="tel" placeholder="Teléfono*" name="phone" required="" value="<?= $_SESSION['phone'] ?? "" ?>">
+                        <div class="mb-3"><input class="form-control" type="tel" placeholder="Teléfono*" name="phone" required="">
                             <div class="form-check float-end"><input class="form-check-input" type="checkbox" id="formCheck-1" checked="" name="mobile"><label class="form-check-label" for="formCheck-1">Celular?</label></div>
                         </div><!-- End: Teléfono -->
                         <!-- Start: Correo -->
-                        <div class="mb-3" name="email"><input class="form-control" type="email" placeholder="Correo Electrónico" name="email" value="<?= $_SESSION['from'] ?? "" ?>"></div><!-- End: Correo --><div class="mb-3">
+                        <div class="mb-3" name="email"><input class="form-control" type="email" placeholder="Correo Electrónico" name="email"></div><!-- End: Correo --><div class="mb-3">
                             <!-- Start: Seleccionado --><select class="form-select" name="city" required>
                                 <optgroup label="Ciudades">
                                     <option value='-1' disabled selected>Seleccionar Ciudad…</option>

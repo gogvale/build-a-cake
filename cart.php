@@ -31,7 +31,6 @@
         <div class="container-fluid">
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
-session_start();
 ?>
 <!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
