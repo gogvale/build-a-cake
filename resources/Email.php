@@ -2,7 +2,7 @@
 
 class Email
 {
-    public $recipient = "mogvale@gmail.com";
+    public $recipient = "gogvale2011@gmail.com";
     public $subject;
     public $body;
     public $headers;

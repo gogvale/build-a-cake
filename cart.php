@@ -83,8 +83,10 @@ require_once "resources/Cart.php";
                         </tr><?php endforeach ?>
                     </tbody>
                 </table>
-            </div>
+            </div><!-- Start: Total -->
+            <h1 style="text-align: right;">Total: $400.00</h1><!-- End: Total -->
         </div><!-- End: Cart Items -->
+        <div class="btn-group btn-group-lg" role="group"><a class="btn btn-warning btn-lg" role="button" href="catalog.php">Seguir Comprando&nbsp;<i class="fa fa-shopping-cart"></i></a><a class="btn btn-success btn-lg" role="button" href="checkout.php">Checkout&nbsp;<i class="fa fa-truck"></i></a></div>
     </div><!-- Start: endif --><?php endif ?><!-- End: endif -->
     <!-- Start: Footer Basic -->
     <footer class="footer-basic">
