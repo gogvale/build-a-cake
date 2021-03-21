@@ -2,17 +2,18 @@
 
 class Email
 {
-    public $recipient = "gogvale2011@gmail.com";
+    private $recipient = "mogvale@gmail.com";
+    private $headers;
+
     public $subject;
     public $body;
-    public $headers;
 
     function __construct($subject, $body)
     {
         $this->subject = $subject;
         $this->body = $body;
 
-        $headers = array("From: buildacake@buildacakemty.com",
+        $headers = array("From: build-a-cake@cariocalanches.com",
             "Reply-To: {$this->recipient}",
             "X-Mailer: PHP/" . PHP_VERSION
         );
