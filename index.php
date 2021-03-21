@@ -61,13 +61,13 @@ require_once "resources/Cart.php";
             <!-- Start: Slide Wrapper -->
             <div class="swiper-wrapper">
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url('./assets/img/Carousel/Banner.png') center center / cover no-repeat;"></div><!-- End: Slide -->
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url('./assets/img/Carousel/Banner.png') center center / cover no-repeat;"></div><!-- End: Slide -->
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url('./assets/img/Carousel/Banner.png') center center / cover no-repeat;"></div><!-- End: Slide -->
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url("./assets/img/Carousel/Banner.png") center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url('./assets/img/Carousel/Banner.png') center center / cover no-repeat;"></div><!-- End: Slide -->
             </div><!-- End: Slide Wrapper -->
             <!-- Start: Pagination -->
             <div class="swiper-pagination"></div><!-- End: Pagination -->
