@@ -3,5 +3,5 @@ CREATE TABLE Product (
     Name TEXT NOT NULL,
     Description Text,
     Price REAL DEFAULT 0.00,
-    Picture TEXT
+    Picture TEXT DEFAULT "default.png"
 );
