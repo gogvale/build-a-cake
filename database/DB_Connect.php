@@ -6,10 +6,10 @@ class DB_Connect
     protected $username;
     protected $password;
 
-    private $dbh;
+    public $dbh;
     public $table;
 
-    function __construct($config_file = "/.config.php")
+    function __construct($config_file = ".config.php")
     {
         $config = require($config_file);
         $this->host = $config['host'];
@@ -24,6 +24,12 @@ class DB_Connect
         $dsn = "mysql:dbname={$this->dbname};host={$this->host}";
         $user = $this->username;
         $password = $this->password;
-        $this->dbh = new PDO($dsn, $user, $password);
+        try{
+            $this->dbh = new PDO($dsn, $user, $password);
+        } catch(PDOException $e){
+            echo "Something went wrong. [DB_Connect]\n";
+            // throw new PDOException($e->getMessage(), (int)$e->getCode());
+            // die("End");
+        }
     }
 }

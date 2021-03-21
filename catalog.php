@@ -67,106 +67,18 @@ require_once "resources/Cart.php";
             </div>
         </div><!-- End: Search Input Responsive with Icon -->
         <div class="row g-0 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
+            <!-- Start: start foreach --><?php require "resources/Product_list.php";?>
+            <?php foreach($product_list as $product) : ?>
             <div class="col">
                 <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
+                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="<?= $product->image_full_path() ?>">
+                        <h4 class="card-title"><?= $product->name ?></h4>
+                        <p class="card-text"><?= $product->description ?></p>
+                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$<?= $product->price ?></h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg">
-                        <h4 class="card-title">Pastel de Chocolate</h4>
-                        <h6 class="text-text-muted card-subtitle mb-2">Estilo Volcán</h6>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$200.00</h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?><!-- End: start foreach -->
         </div>
     </div><!-- Start: Footer Basic -->
     <footer class="footer-basic">
