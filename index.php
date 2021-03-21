@@ -61,8 +61,20 @@ require_once "resources/Cart.php";
             <!-- Start: Slide Wrapper -->
             <div class="swiper-wrapper">
                 <!-- Start: Slide -->
-                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <!-- Start: Slide -->
+                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <!-- Start: Slide -->
+                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
+                <!-- Start: Slide -->
+                <div class="swiper-slide" style="background: url(&quot;./assets/img/Carousel/Banner.png&quot;) center center / cover no-repeat;"></div><!-- End: Slide -->
             </div><!-- End: Slide Wrapper -->
+            <!-- Start: Pagination -->
+            <div class="swiper-pagination"></div><!-- End: Pagination -->
+            <!-- Start: Previous -->
+            <div class="swiper-button-prev"></div><!-- End: Previous -->
+            <!-- Start: Next -->
+            <div class="swiper-button-next"></div><!-- End: Next -->
         </div><!-- End: Slideshow -->
     </div><!-- End: Avisos -->
     <!-- Start: Content -->

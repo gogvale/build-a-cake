@@ -80,15 +80,16 @@ require_once "resources/Cart.php";
                     <!-- Start: Contact Form Clean -->
                     <section class="contact-clean" style="padding: 2em 0;">
                         <!-- Start: Nombre -->
-                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre*"></div><!-- End: Nombre -->
+                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nombre*" required=""></div><!-- End: Nombre -->
                         <!-- Start: Teléfono -->
-                        <div class="mb-3"><input class="form-control" type="tel" placeholder="Teléfono*" name="phone">
+                        <div class="mb-3"><input class="form-control" type="tel" placeholder="Teléfono*" name="phone" required="">
                             <div class="form-check float-end"><input class="form-check-input" type="checkbox" id="formCheck-1" checked="" name="mobile"><label class="form-check-label" for="formCheck-1">Celular?</label></div>
                         </div><!-- End: Teléfono -->
                         <!-- Start: Correo -->
                         <div class="mb-3" name="email"><input class="form-control" type="email" placeholder="Correo Electrónico" name="email"></div><!-- End: Correo --><div class="mb-3">
-                            <!-- Start: Seleccionado --><select class="form-select" name="city">
+                            <!-- Start: Seleccionado --><select class="form-select" name="city" required>
                                 <optgroup label="Ciudades">
+                                    <option value='-1' disabled selected>Seleccionar Ciudad…</option>
                                     <?php 
                                     require "resources/Ciudades.php";
 
