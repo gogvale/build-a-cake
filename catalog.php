@@ -71,7 +71,7 @@ require_once "resources/Cart.php";
             <?php foreach($product_list as $product) : ?>
             <div class="col">
                 <div class="card my-1" style="min-height:405px;">
-                    <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="<?= $product->image_full_path() ?>">
+                    <div class="card-body"><img class="img-fluid mx-auto d-block" alt="product" loading="lazy" src="<?= $product->image_full_path() ?>">
                         <a class="stretched-link" href="product.php?id=<?= $product->id ?>"></a>
                             <h4 style="text-align: center; text-decoration:underline black" class="card-title"><?= $product->name ?></h4>
                         <p class="card-text"><?= $product->description ?></p>
