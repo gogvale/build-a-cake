@@ -21,7 +21,7 @@ class DB_Connect
 
     protected function startDBConnection()
     {
-        $dsn = "mysql:host={$this->host};dbname={$this->dbname};";
+        $dsn = "mysql:host={$this->host};dbname={$this->dbname};charset=utf8";
         $user = $this->username;
         $password = $this->password;
         try{
