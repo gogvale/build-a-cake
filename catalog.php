@@ -75,10 +75,12 @@ require_once "resources/Cart.php";
                         <a class="stretched-link" href="product.php?id=<?= $product->id ?>"></a>
                             <h4 style="text-align: center; text-decoration:underline black" class="card-title"><?= $product->name ?></h4>
                         <p class="card-text"><?= $product->description ?></p>
+                        <p class="card-text text-end price"><strong>$<?= $product->price ?></strong></p>
                     </div>
                 </div>
             </div>
-            <?php endforeach ?><!-- End: Foreach products -->
+            <?php endforeach ?>
+            <!-- End: Foreach products -->
         </div>
     </div><!-- Start: Footer Basic -->
     <footer class="footer-basic">
