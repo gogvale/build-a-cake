@@ -72,11 +72,11 @@ require_once "resources/Cart.php";
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($cart->items() as $item) : ?>
+                        <?php foreach ($cart->items() as $id=>$item) : ?>
                         <tr>
-                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="assets/img/Gallery/mariza-carioca_20200613-1.jpeg"></td>
-                            <td>Pastel de Chocolate</td>
-                            <td>$200.00</td>
+                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="<?= $item->image_full_path() ?>"></td>
+                            <td><?= $item->name ?></td>
+                            <td><?="$". $item->price() ?></td>
                             <td style="text-align: center;">
                                 <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm('Seguro desea borrar el producto?')">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
                             </td>
@@ -84,7 +84,9 @@ require_once "resources/Cart.php";
                     </tbody>
                 </table>
             </div><!-- Start: Total -->
-            <h1 style="text-align: right;">Total: $400.00</h1><!-- End: Total -->
+            <p style="text-align: right;">Total: <strong>$
+<?= $cart->total() ?>
+</strong></p><!-- End: Total -->
         </div><!-- End: Cart Items -->
         <div class="btn-group btn-group-lg" role="group"><a class="btn btn-warning btn-lg" role="button" href="catalog.php">Seguir Comprando&nbsp;<i class="fa fa-shopping-cart"></i></a><a class="btn btn-success btn-lg" role="button" href="checkout.php">Checkout&nbsp;<i class="fa fa-truck"></i></a></div>
     </div><!-- Start: endif --><?php endif ?><!-- End: endif -->

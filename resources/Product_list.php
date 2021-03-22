@@ -1,6 +1,6 @@
 <?php
-require "database/DB_Connect.php";
-require "Product.php";
+require_once "database/DB_Connect.php";
+require_once "Product.php";
 
 class Product_list extends DB_Connect
 {

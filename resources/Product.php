@@ -9,7 +9,7 @@ class Product
     public $price;
     public $picture;
 
-    function __construct($id=1,$name="test",$description="test",$price="0.00",$picture="default.png")
+    function __construct($id=1,$name="Nombre del Producto",$description="Descripción del Producto",$price=100.00,$picture="default.png")
     {
         $this->id = $id;
 
@@ -27,6 +27,9 @@ class Product
     function image_full_path()
     {
         return $this::$path . $this->picture;
+    }
+    function price(){
+        return number_format($this->price,2,'.',',');
     }
 
 }

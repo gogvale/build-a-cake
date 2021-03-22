@@ -69,9 +69,9 @@ require_once "resources/Cart.php";
                     <p style="padding-top: 2em;">Confirma tu pedido:</p>
                     <ul class="list-group">
                         <?php foreach ($cart->items() as $item) : ?>
-                        <li class="list-group-item"><span>Pastel de Chocolate - $200</span></li><?php endforeach ?>
+                        <li class="list-group-item"><span><?= $item->name ?> - <?= $item->price() ?></span></li><?php endforeach ?>
                     </ul>
-                    <h4 class="text-end">Total: $600.00</h4>
+                    <h4 class="text-end">Total: $<?= $cart->total() ?></h4>
                 </div>
                 <div class="col-md-4">
                     <p style="text-align: center;padding-top: 2em;">Comentarios sobre tu pedido (opcional)</p><textarea class="form-control" rows="8" placeholder="Ejemplo: entregar en la caseta, sin cerezas, etc." name="details"></textarea>
