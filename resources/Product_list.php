@@ -6,33 +6,32 @@ class Product_list extends DB_Connect
 {
     public $list = [];
 
-    function __construct()
+    function __construct($config)
     {
-        parent::__construct();
+        parent::__construct($config);
         $this->table = "Product";
         $this->get_all_products();
     }
     
     function get_all_products(){
         try {
-            $products_buffer = $this->dbh->query("SELECT * FROM `{$this->table}`");
-            while($row = $products_buffer->fetch()){
-                $list[] = new Product(...$row);
+            foreach($this->dbh->query("SELECT * FROM `{$this->table}`") as $row) 
+            {
+                $p = new Product(
+                    $row['ID'],
+                    $row['name'],
+                    $row['description'],
+                    $row['price'],
+                    $row['picture']
+                );
+                $this->list[] = $p;
             }
         } catch(PDOException $e) {
             echo "Something went wrong. [Product_list]\n";
-            // throw new PDOException($e->getMessage(), (int)$e->getCode());
+            die ("ERROR ". $e->getMessage().",". (int)$e->getCode());
         }
     }
 }
 
-// $product_list = new Product_list;
-// $product_list= $product_list->list;
-
-$product_list = [
-    new Product(),
-    new Product(),
-    new Product(),
-    new Product(),
-    new Product(),
-];
+$product_list = new Product_list('.config.php');
+$product_list = $product_list->list;
