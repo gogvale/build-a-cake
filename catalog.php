@@ -56,29 +56,29 @@ require_once "resources/Cart.php";
         </div>
     </nav>
     <div class="container">
-        <h1 style="margin: 1em;text-align: center;">Nuestros Productos</h1><!-- Start: Search Input Responsive with Icon -->
+        <h1 style="margin: 1em;text-align: center;border-style: none;">Nuestros Productos</h1><!-- Start: Search Input Responsive with Icon -->
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="card m-auto" style="max-width:850px">
                     <div class="card-body">
-                        <form class="d-flex align-items-center" method="GET" action="catalog.php"><i class="fas fa-search d-none d-sm-block h4 text-body m-0"></i><input class="form-control form-control-lg flex-shrink-1 form-control-borderless" type="search" placeholder="Busca en nuestra selección de productos" name="searchbar"><button class="btn btn-success btn-lg" type="submit">Buscar</button></form>
+                        <form class="d-flex align-items-center" method="GET" action="catalog.php"><i class="fas fa-search d-none d-sm-block h4 text-body m-0"></i><input class="form-control form-control-lg flex-shrink-1 form-control-borderless" type="search" placeholder="Búsqueda" name="searchbar"><button class="btn btn-success btn-lg" type="submit">Buscar</button></form>
                     </div>
                 </div>
             </div>
         </div><!-- End: Search Input Responsive with Icon -->
-        <div class="row g-0 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
-            <!-- Start: start foreach --><?php require "resources/Product_list.php";?>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
+            <!-- Start: Foreach products --><?php require "resources/Product_list.php";?>
             <?php foreach($product_list as $product) : ?>
             <div class="col">
-                <div class="card">
+                <div class="card my-1" style="min-height:405px;">
                     <div class="card-body"><img class="img-fluid" alt="product" loading="lazy" src="<?= $product->image_full_path() ?>">
-                        <h4 class="card-title"><?= $product->name ?></h4>
+                        <a class="stretched-link" href="product.php?id=<?= $product->id ?>"></a>
+                            <h4 style="text-align: center; text-decoration:underline black" class="card-title"><?= $product->name ?></h4>
                         <p class="card-text"><?= $product->description ?></p>
-                        <h3 class="text-text-muted card-subtitle mb-2" style="text-align: right;">$<?= $product->price ?></h3><button class="btn btn-outline-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button>
                     </div>
                 </div>
             </div>
-            <?php endforeach ?><!-- End: start foreach -->
+            <?php endforeach ?><!-- End: Foreach products -->
         </div>
     </div><!-- Start: Footer Basic -->
     <footer class="footer-basic">

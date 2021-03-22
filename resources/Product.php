@@ -2,7 +2,7 @@
 
 class Product
 {
-    private $id;
+    public $id;
     static $path = "/assets/img/Products/";
     public $name;
     public $description;
