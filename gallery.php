@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
@@ -54,25 +55,26 @@ require_once "resources/Cart.php";
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <!-- Start: Lightbox Gallery -->
-        <section class="photo-gallery">
-            <div class="container">
-                <!-- Start: Intro -->
-                <div class="intro">
-                    <h2 class="text-center">Galería</h2>
-                    <p class="text-center" target="_blank">Para más fotos, síguenos en&nbsp;<a href="https://www.instagram.com/mariza.carioca/" target="_blank">Instagram</a></p>
-                </div><!-- End: Intro -->
-                <!-- Start: Photos -->
-                <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery->array as $picture): ?>
-    <figure class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path . $picture ?>" loading="lazy"></a></figure>
-<?php endforeach; ?>
-
-</div><!-- End: Photos -->
-            </div>
-        </section><!-- End: Lightbox Gallery -->
-    </div><!-- Start: Footer Basic -->
+    </nav><!-- Start: Lightbox Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h2 class="text-center">Galería de Fotos</h2>
+                <p class="text-center">Síguenos en &nbsp;<a href="https://instagram.com/carioca.lanches">Instagram</a>&nbsp;para más fotos!</p>
+            </div><!-- End: Intro -->
+            <!-- Start: Photos -->
+            <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery->array as $picture) : ?>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path. $picture ?>"></a></div><?php endforeach ?>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
+            </div><!-- End: Photos -->
+        </div>
+    </section><!-- End: Lightbox Gallery -->
+    <!-- Start: Footer Basic -->
     <footer class="footer-basic">
         <!-- Start: Social Icons -->
         <div class="social"><a href="https://www.instagram.com/mariza.carioca/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/cariocalanchesmty" target="_blank"><i class="icon ion-social-facebook"></i></a></div><!-- End: Social Icons -->
@@ -82,6 +84,8 @@ require_once "resources/Cart.php";
     </footer><!-- End: Footer Basic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
