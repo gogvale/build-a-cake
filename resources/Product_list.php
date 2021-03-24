@@ -31,7 +31,26 @@ class Product_list extends DB_Connect
             die ("ERROR ". $e->getMessage().",". (int)$e->getCode());
         }
     }
+
+    function get_by_id(int $id){
+        try {
+            foreach($this->dbh->query("SELECT * FROM `{$this->table}` WHERE ID = $id") as $row) 
+            {
+                $p = new Product(
+                    $row['ID'],
+                    $row['name'],
+                    $row['description'],
+                    $row['price'],
+                    $row['picture']
+                );
+                return $p;
+            }
+        } catch(PDOException $e) {
+            echo "Something went wrong. [Product_list]\n";
+            die ("ERROR ". $e->getMessage().",". (int)$e->getCode());
+        }
+    }
 }
 
-$product_list = new Product_list('.config.php');
-$product_list = $product_list->list;
+$PDL = new Product_list('.config.php');
+$product_list = $PDL->list;
