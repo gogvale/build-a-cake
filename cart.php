@@ -78,9 +78,7 @@ require_once "resources/Cart.php";
                             <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="<?= $item->image_full_path() ?>"></td>
                             <td><?= $item->name ?></td>
                             <td><?="$". $item->price() ?></td>
-                            <td style="text-align: center;">
-                                <div class="btn-group" role="group"><button class="btn btn-outline-success" type="button">Agregar Otro&nbsp;<i class="fa fa-plus"></i></button><button class="btn btn-outline-danger" type="submit" onclick="confirm('Seguro desea borrar el producto?')">Remover&nbsp;<i class="fa fa-trash"></i></button></div>
-                            </td>
+                            <td style="text-align: center;"><div role="group" class="btn-group"><a class="btn btn-outline-success" role="button" href="add-to-cart.php?product_id=<?=$item->id ?>">Agregar Otro <i class="fa fa-plus"></i></a><a class="btn btn-outline-danger" role="button" href="remove-from-cart.php?product_id=<?=$id ?>" >Remover <i class="fa fa-trash"></i></a></div></td>
                         </tr><?php endforeach ?>
                     </tbody>
                 </table>

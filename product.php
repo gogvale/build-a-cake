@@ -69,7 +69,9 @@ require_once "resources/Cart.php";
     <div class="container" style="padding: 2em;"><a href="catalog.php" style="font-size: 2em;">&lt; Regresar al catálogo</a><h1 class="my-4"><?= $product->name ?><br /></h1>
         <div class="row" style="margin-bottom: 10em;">
             <div class="col-md-8"><img class="img-fluid" src="<?= 'assets/img/Products/'.$product->picture ?>" alt="<?= $product->name ?>"></div>
-            <div class="col-md-4"><h3 class="my-3"><?= $product->name ?></h3><p><?= $product->description ?></p><h4 class="text-end">Precio: $<?=$product->price()?></h4><button class="btn btn-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button></div>
+            <div class="col-md-4"><h3 class="my-3"><?= $product->name ?></h3><p><?= $product->description ?></p><h4 class="text-end">Precio: $<?=$product->price()?></h4>
+                <form action="add-to-cart.php"><input type="text" class="form-control" name="product_id" value="<?= $product->id ?>" hidden /><button class="btn btn-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button></form>
+            </div>
         </div>
         <h3 class="my-4">Productos Similares<br></h3>
         <div class="row"><?php foreach(array_slice($product_list,0,4) as $item) : ?>

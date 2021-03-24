@@ -69,7 +69,7 @@ require_once "resources/Cart.php";
                 <div class="col-md-4">
                     <p style="padding-top: 2em;">Confirma tu pedido:</p>
                     <ul class="list-group">
-                        <?php foreach ($cart->items() as $item) : ?>
+                        <?php foreach ($cart->items() as $id=>$item) : ?>
                         <li class="list-group-item"><span><?= $item->name ?> - <?= $item->price() ?></span></li><?php endforeach ?>
                     </ul>
                     <h4 class="text-end">Total: $<?= $cart->total() ?></h4>
