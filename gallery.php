@@ -65,12 +65,7 @@ require_once "resources/Cart.php";
             </div><!-- End: Intro -->
             <!-- Start: Photos -->
             <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery->array as $picture) : ?>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path. $picture ?>"></a></div><?php endforeach ?>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="<?= $gallery->path . $picture ?>"><img class="img-fluid" src="<?= $gallery->path. $picture ?>" loading="lazy"></a></div><?php endforeach ?>
             </div><!-- End: Photos -->
         </div>
     </section><!-- End: Lightbox Gallery -->
