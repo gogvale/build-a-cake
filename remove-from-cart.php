@@ -6,10 +6,5 @@ $cart->remove_by_id($product_id);
 
 
 
-echo "<pre>";
-var_dump($cart);
-echo "</pre>"; 
-
-
 header("Location: cart.php");
 

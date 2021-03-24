@@ -9,10 +9,5 @@ $cart->add($product);
 
 echo $product->name . " agregado!\n";
 
-echo "<pre>";
-var_dump($cart);
-echo "</pre>"; 
-
-
 header("Location: cart.php");
 
