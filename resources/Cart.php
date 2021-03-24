@@ -52,6 +52,15 @@ class Cart
         $this->items = [];
         $this->save_cookie();
     }
+
+
+
+    function name_price(){
+        function np($a){
+            return "- {$a->name} \${$a->price()}";
+        }
+        return array_map("np", $this->items);
+    }
 }
 
 if( isset($_COOKIE['cart']))
