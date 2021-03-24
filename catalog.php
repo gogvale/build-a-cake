@@ -66,8 +66,7 @@ require_once "resources/Cart.php";
                     </div>
                 </div>
             </div>
-        </div><!-- End: Search Input Responsive with Icon -->
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
+        </div><!-- End: Search Input Responsive with Icon -->  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
             <!-- Start: Foreach products --><?php require "resources/Product_list.php";?>
             <?php foreach($product_list as $product) : ?>
             <div class="col">
