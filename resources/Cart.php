@@ -49,7 +49,8 @@ class Cart
     }
 
     function empty_cart(){
-        $this->list = [];
+        $this->items = [];
+        $this->save_cookie();
     }
 }
 
