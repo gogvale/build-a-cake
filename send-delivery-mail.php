@@ -42,18 +42,24 @@ $message =  sanitize_input($_POST['details']);
 $city_id =  sanitize_input($_POST['city']);
 
 
+
+$item_list = join(PHP_EOL,$cart->name_price());
+
 $body = <<<EOL
 Nombre: {$name}
 Celular: {$phone} ({$mobile})
 Correo: {$from}
 Ciudad: {$ciudades[$city_id]}
 
+Productos:
+{$item_list}
+
+Total: \${$cart->total()}
+
 Detalles adicionales:
 {$message}
 
 EOL;
-
-// TODO: Agregar detalhes do pedido ao corpo da mensagem
 
 $email = new Email("Nuevo Pedido - Build-a-cake", $body);
 $email_sent = $email->send_email();
@@ -70,7 +76,6 @@ $email_sent = $email->send_email();
         </h1>
         <p class="text-center">Da click <a href="../index.php">aquí</a> para regresar a la página inicial</p>
     </div>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>

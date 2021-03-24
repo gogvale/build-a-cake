@@ -12,5 +12,5 @@ sed -i "s/&#39;/'/g" *.php
 # sed -i 's/&quot;/"/g' *.php
 
 
-sed -i 's/<!-- Start: Start List -->/<?php foreach ($cart->items() as $id=>$item) : ?>/g' checkout.php
+sed -i 's/<!-- Start: Start List -->/<?php foreach ($cart->name_price() as $id=>$item) : ?>/g' checkout.php
 sed -i 's/<!-- End: Start List -->/<?php endforeach ?>/g' checkout.php

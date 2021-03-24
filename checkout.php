@@ -64,13 +64,13 @@ require_once "resources/Cart.php";
                 <p style="text-align: justify;">El cobro se realizará al momento de realizar la entrega. Nosotros recolectaremos tus datos y nos pondremos en contacto para verificar la compra y aclarar cualquier detalle con su pedido, asegúrese de llenar correctamente la información antes de enviar.</p>
             </div>
         </div><!-- End: Aviso -->
-        <form method="POST" action="resources/send-delivery-mail.php">
+        <form method="POST" action="send-delivery-mail.php">
             <div class="row">
                 <div class="col-md-4">
                     <p style="padding-top: 2em;">Confirma tu pedido:</p>
                     <ul class="list-group">
-                        <?php foreach ($cart->items() as $id=>$item) : ?>
-                        <li class="list-group-item"><span><?= $item->name ?> - <?= $item->price() ?></span></li><?php endforeach ?>
+                        <?php foreach ($cart->name_price() as $id=>$item) : ?>
+                        <li class="list-group-item"><span><?= $item ?></span></li><?php endforeach ?>
                     </ul>
                     <h4 class="text-end">Total: $<?= $cart->total() ?></h4>
                 </div>
