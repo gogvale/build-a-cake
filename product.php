@@ -66,7 +66,7 @@ require_once "resources/Cart.php";
         <h1 style="text-align: center;">Lo sentimos, este producto no existe</h1><a class="btn btn-success btn-lg" role="button" href="catalog.php">Regresar al Catálogo</a>
     </div><!-- Start: Else --><?php else : ?><!-- End: Else -->
     <!-- Start: Bold BS4 Portfolio Item Details Page -->
-    <div class="container" style="padding: 2em;"><a href="catalog.php" style="font-size: 2em;">&lt; Regresar al catálogo</a><h1 class="my-4"><?= $product->name ?><br /></h1>
+    <div class="container" style="padding: 2em;"><a class="btn btn-light" role="button" href="catalog.php"><i class="fa fa-arrow-left"></i>&nbsp;Catálogo</a><h1 class="my-4"><?= $product->name ?><br /></h1>
         <div class="row" style="margin-bottom: 10em;">
             <div class="col-md-8"><img class="img-fluid" src="<?= 'assets/img/Products/'.$product->picture ?>" alt="<?= $product->name ?>"></div>
             <div class="col-md-4"><h3 class="my-3"><?= $product->name ?></h3><p><?= $product->description ?></p><h4 class="text-end">Precio: $<?=$product->price()?></h4>
@@ -95,6 +95,7 @@ require_once "resources/Cart.php";
         <p class="copyright">Carioca Lanches © 2021</p><!-- End: Copyright -->
         <!-- Start: Scroll To Top --><a id="scroll-to-top" title="Scroll to top" href="#"><i class="fas fa-angle-up"></i></a><!-- End: Scroll To Top -->
     </footer><!-- End: Footer Basic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
