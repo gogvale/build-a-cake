@@ -20,8 +20,9 @@
 <body>
 <?php
 
-require "Email.php";
-require "Ciudades.php";
+require "resources/Email.php";
+require "resources/Ciudades.php";
+require "resources/Cart.php";
 
 function sanitize_input($string)
 {
@@ -58,17 +59,17 @@ $email = new Email("Nuevo Pedido - Build-a-cake", $body);
 $email_sent = $email->send_email();
 ?>
 
-<?php if ($email_sent) : ?>
     <div style="padding: 10em;">
-        <h1 class="text-center">¡Mensaje enviado con éxito!</h1>
+        <h1 class="text-center">
+            <?php if ($email_sent) : ?> 
+                ¡Mensaje enviado con éxito!
+                <?php $cart->empty_cart() ?>
+            <?php else : ?>
+                Ocurrió un problema, intenta nuevamente más tarde.
+            <?php endif ?>
+        </h1>
         <p class="text-center">Da click <a href="../index.php">aquí</a> para regresar a la página inicial</p>
     </div>
-<?php else : ?>
-    <div style="padding: 10em;">
-        <h1 class="text-center">Ocurrió un problema</h1>
-        <p class="text-center">Da click <a href="../index.php">aquí</a> para regresar a la página inicial</p>
-    </div>
-<?php endif ?>
 
 
 
