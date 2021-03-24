@@ -55,7 +55,37 @@ require_once "resources/Cart.php";
                 </ul>
             </div>
         </div>
-    </nav><!-- Start: Footer Basic -->
+    </nav><!-- Start: Imports -->    <?php 
+    require_once "resources/Product_list.php";
+    shuffle($product_list);
+    $product = $PDL->get_by_id($_GET['id']);
+    ?>
+<!-- End: Imports -->
+    <!-- Start: If Invalid --><?php if(empty($product)) : ?><!-- End: If Invalid -->
+    <div class="text-center">
+        <h1 style="text-align: center;">Lo sentimos, este producto no existe</h1><a class="btn btn-success btn-lg" role="button" href="catalog.php">Regresar al Catálogo</a>
+    </div><!-- Start: Else --><?php else : ?><!-- End: Else -->
+    <!-- Start: Bold BS4 Portfolio Item Details Page -->
+    <div class="container" style="padding: 2em;"><a href="catalog.php" style="font-size: 2em;">&lt; Regresar al catálogo</a><h1 class="my-4"><?= $product->name ?><br /></h1>
+        <div class="row" style="margin-bottom: 10em;">
+            <div class="col-md-8"><img class="img-fluid" src="<?= 'assets/img/Products/'.$product->picture ?>" alt="<?= $product->name ?>"></div>
+            <div class="col-md-4"><h3 class="my-3"><?= $product->name ?></h3><p><?= $product->description ?></p><h4 class="text-end">Precio: $<?=$product->price()?></h4><button class="btn btn-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button></div>
+        </div>
+        <h3 class="my-4">Productos Similares<br></h3>
+        <div class="row"><?php foreach(array_slice($product_list,0,4) as $item) : ?>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <!-- Start: Card --><div class="card">
+<img class="img-fluid" src="<?= 'assets/img/Products/'.$item->picture ?>" alt="<?= $item->name ?>" />
+<h4 class="card-title"><?= $item->name ?></h4>
+<small>$<?= $item->price() ?></small>
+<a class="stretched-link" a href="product.php?id=<?= $item->id ?>"></a>
+</div>
+<!-- End: Card -->
+            </div><?php endforeach ?>
+        </div>
+    </div><!-- End: Bold BS4 Portfolio Item Details Page -->
+    <!-- Start: Endif --><?php endif ?><!-- End: Endif -->
+    <!-- Start: Footer Basic -->
     <footer class="footer-basic">
         <!-- Start: Social Icons -->
         <div class="social"><a href="https://www.instagram.com/mariza.carioca/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/cariocalanchesmty" target="_blank"><i class="icon ion-social-facebook"></i></a></div><!-- End: Social Icons -->
