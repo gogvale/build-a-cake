@@ -69,14 +69,12 @@ $email_sent = $email->send_email();
         <h1 class="text-center">
             <?php if ($email_sent) : ?> 
                 ¡Mensaje enviado con éxito!
-                <?php $cart->empty_cart() ?>
             <?php else : ?>
                 Ocurrió un problema, intenta nuevamente más tarde.
             <?php endif ?>
         </h1>
-        <p class="text-center">Da click <a href="../index.php">aquí</a> para regresar a la página inicial</p>
+        <p class="text-center">Da click <a href="../clean_cart.php">aquí</a> para regresar a la página inicial</p>
     </div>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>

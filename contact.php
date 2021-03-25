@@ -44,14 +44,14 @@ require_once "resources/Cart.php";
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="gallery.php">Galería</a></li><!-- End: Galeria -->
                     <!-- Start: Contacto -->
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link active" href="contact.php">Contáctanos</a></li><!-- End: Contacto -->
+                    <!-- Start: Sobre Nosotros -->
+                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.php">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
                     <!-- Start: Cart -->
                     <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="cart.php">Carrito&nbsp;<i class="fa fa-shopping-cart"></i><?php if(!$cart->empty()): ?>
     <span id="cart-count" class="badge rounded-pill bg-success">
         <?= $cart->size() ?>
     </span>
 <?php endif ?>&nbsp;</a></li><!-- End: Cart -->
-                    <!-- Start: Sobre Nosotros -->
-                    <li class="nav-item" data-bss-hover-animate="rubberBand"><a class="nav-link" href="about-us.php">Sobre Nosotros</a></li><!-- End: Sobre Nosotros -->
                 </ul>
             </div>
         </div>
