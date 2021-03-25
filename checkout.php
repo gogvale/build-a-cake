@@ -33,7 +33,11 @@
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
 ?>
-<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span><?php if(!$cart->empty()): ?>
+    <span id="cart-count-mobile" class="badge rounded-pill bg-warning">
+        <?= $cart->size() ?>
+    </span>
+<?php endif ?></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
@@ -58,13 +62,13 @@ require_once "resources/Cart.php";
     </nav><!-- Start: 2 Rows 1+3 Columns -->
     <div class="container" style="padding: 2em 0;">
         <!-- Start: Aviso -->
-        <div class="row" style="text-align: center;">
+        <div class="row" style="text-align: center;padding: 0 1em;">
             <div class="col-auto col-lg-10 col-xl-8 col-xxl-6 offset-lg-1 offset-xl-2 offset-xxl-3" id="warning">
                 <h1>¡Gracias por la preferencia!</h1>
-                <p style="text-align: justify;">El cobro se realizará al momento de realizar la entrega. Nosotros recolectaremos tus datos y nos pondremos en contacto para verificar la compra y aclarar cualquier detalle con su pedido, asegúrese de llenar correctamente la información antes de enviar.</p>
+                <p style="text-align: justify;margin: 2em;">Por favor, asegúrate de llenar correctamente los campos del cadastro.&nbsp; Entraremos en contacto para aclarar detalles del pedido, entrega y pagamento</p>
             </div>
         </div><!-- End: Aviso -->
-        <form method="POST" action="send-delivery-mail.php">
+        <form method="POST" action="send-delivery-mail.php" style="padding: 0 2em;">
             <div class="row">
                 <div class="col-md-4">
                     <p style="padding-top: 2em;">Confirma tu pedido:</p>
@@ -74,9 +78,7 @@ require_once "resources/Cart.php";
                     </ul>
                     <h4 class="text-end">Total: $<?= $cart->total() ?></h4>
                 </div>
-                <div class="col-md-4">
-                    <p style="text-align: center;padding-top: 2em;">Comentarios sobre tu pedido (opcional)</p><textarea class="form-control" rows="8" placeholder="Ejemplo: entregar en la caseta, sin cerezas, etc." name="details"></textarea>
-                </div>
+                <div class="col-md-4"><textarea class="form-control" rows="8" placeholder="Comentarios sobre tu pedido (opcional)" name="details" style="margin-top: 2em;"></textarea></div>
                 <div class="col-md-4">
                     <!-- Start: Contact Form Clean -->
                     <section class="contact-clean" style="padding: 2em 0;">

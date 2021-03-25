@@ -61,7 +61,7 @@ Detalles adicionales:
 
 EOL;
 
-$email = new Email("Nuevo Pedido - Build-a-cake", $body);
+$email = new Email("Nuevo Pedido - Build-a-cake", $body, $from);
 $email_sent = $email->send_email();
 ?>
 

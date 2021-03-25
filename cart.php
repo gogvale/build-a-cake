@@ -33,7 +33,11 @@
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
 ?>
-<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span><?php if(!$cart->empty()): ?>
+    <span id="cart-count-mobile" class="badge rounded-pill bg-warning">
+        <?= $cart->size() ?>
+    </span>
+<?php endif ?></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
@@ -75,10 +79,10 @@ require_once "resources/Cart.php";
                     <tbody>
                         <?php foreach ($cart->items() as $id=>$item) : ?>
                         <tr>
-                            <td style="width: auto;padding: 0;text-align: center;"><img class="border rounded-circle product-thumbnail" src="<?= $item->image_full_path() ?>"></td>
+                            <td style="width: auto;padding: 0;text-align: center;"></td>
                             <td><?= $item->name ?></td>
                             <td><?="$". $item->price() ?></td>
-                            <td style="text-align: center;"><div role="group" class="btn-group"><a class="btn btn-outline-success" role="button" href="add-to-cart.php?product_id=<?=$item->id ?>">Agregar Otro <i class="fa fa-plus"></i></a><a class="btn btn-outline-danger" role="button" href="remove-from-cart.php?product_id=<?=$id ?>" >Remover <i class="fa fa-trash"></i></a></div></td>
+                            <td style="text-align: center;"><div role="group" class="btn-group"><a class="btn btn-success" role="button" href="add-to-cart.php?product_id=<?=$item->id ?>"><i class="fa fa-plus"></i></a><a class="btn btn-danger" role="button" href="remove-from-cart.php?product_id=<?=$id ?>" ><i class="fa fa-trash"></i></a></div></td>
                         </tr><?php endforeach ?>
                     </tbody>
                 </table>

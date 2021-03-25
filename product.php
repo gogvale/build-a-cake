@@ -33,7 +33,11 @@
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
 ?>
-<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span><?php if(!$cart->empty()): ?>
+    <span id="cart-count-mobile" class="badge rounded-pill bg-warning">
+        <?= $cart->size() ?>
+    </span>
+<?php endif ?></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
@@ -73,7 +77,7 @@ require_once "resources/Cart.php";
                 <form action="add-to-cart.php"><input type="text" class="form-control" name="product_id" value="<?= $product->id ?>" hidden /><button class="btn btn-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button></form>
             </div>
         </div>
-        <h3 class="my-4">Productos Similares<br></h3>
+        <h3 class="my-4">Otros Productos<br></h3>
         <div class="row"><?php foreach(array_slice($product_list,0,4) as $item) : ?>
             <div class="col-sm-6 col-md-3 mb-4">
                 <!-- Start: Card --><div class="card">

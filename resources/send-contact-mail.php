@@ -43,7 +43,7 @@ Mensaje:
 
 EOL;
 
-$email = new Email("Contáctanos - Build-a-cake", $body);
+$email = new Email("Contáctanos - Build-a-cake", $body, $from);
 $email_sent = $email->send_email();
 ?>
 

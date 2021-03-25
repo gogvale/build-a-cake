@@ -33,7 +33,11 @@
             <!-- Start: Load Cart --><?php 
 require_once "resources/Cart.php";
 ?>
-<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<!-- End: Load Cart --><a class="navbar-brand" href="index.php">Build a Cake&nbsp;<i class="fas fa-birthday-cake"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span><?php if(!$cart->empty()): ?>
+    <span id="cart-count-mobile" class="badge rounded-pill bg-warning">
+        <?= $cart->size() ?>
+    </span>
+<?php endif ?></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav justify-content-lg-end">
                     <!-- Start: Inicio -->
@@ -57,16 +61,7 @@ require_once "resources/Cart.php";
         </div>
     </nav>
     <div class="container">
-        <h1 style="margin: 1em;text-align: center;border-style: none;">Nuestros Productos</h1><!-- Start: Search Input Responsive with Icon -->
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="card m-auto" style="max-width:850px">
-                    <div class="card-body">
-                        <form class="d-flex align-items-center" method="GET" action="catalog.php"><i class="fas fa-search d-none d-sm-block h4 text-body m-0"></i><input class="form-control form-control-lg flex-shrink-1 form-control-borderless" type="search" placeholder="Búsqueda" name="searchbar"><button class="btn btn-success btn-lg" type="submit">Buscar</button></form>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End: Search Input Responsive with Icon -->  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
+        <h1 style="margin: 1em;text-align: center;border-style: none;">Nuestros Productos</h1>  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5" style="margin: 2em;">
             <!-- Start: Foreach products --><?php require "resources/Product_list.php";?>
             <?php foreach($product_list as $product) : ?>
             <div class="col">
