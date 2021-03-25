@@ -69,7 +69,7 @@ require_once "resources/Cart.php";
             <!-- Start: Correo -->
             <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Correo Electrónico*" required=""></div><!-- End: Correo -->
             <div class="mb-3"><textarea class="form-control" name="message" placeholder="Mensaje*" rows="14" required=""></textarea></div><small class="d-lg-flex justify-content-lg-end">* Campos Obligatorios</small>
-            <div class="mb-3"><button class="btn btn-outline-success" type="submit">Enviar&nbsp;<i class="fa fa-paper-plane"></i></button></div>
+            <div class="mb-3"><button class="btn btn-success" type="submit"><strong>ENVIAR&nbsp;</strong><i class="fa fa-paper-plane"></i><strong>&nbsp;</strong></button></div>
         </form>
     </section><!-- End: Contact Form Clean -->
     <!-- Start: Footer Basic -->
