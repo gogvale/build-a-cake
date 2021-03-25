@@ -65,7 +65,7 @@ require_once "resources/Cart.php";
             <!-- Start: Intro -->
             <div class="intro">
                 <h2 class="text-center">Galería de Fotos</h2>
-                <p class="text-center">Síguenos en &nbsp;<a href="https://instagram.com/carioca.lanches">Instagram</a>&nbsp;para más fotos!</p>
+                <p class="text-center">Síguenos en <a href="https://instagram.com/mariza.carioca" target="_blank">Instagram</a>&nbsp;para más fotos!</p>
             </div><!-- End: Intro -->
             <!-- Start: Photos -->
             <div class="row photos" data-bss-baguettebox=""><?php foreach($gallery->array as $picture) : ?>
