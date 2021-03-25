@@ -72,9 +72,9 @@ require_once "resources/Cart.php";
     <!-- Start: Bold BS4 Portfolio Item Details Page -->
     <div class="container" style="padding: 2em;"><a class="btn btn-light" role="button" href="catalog.php"><i class="fa fa-arrow-left"></i>&nbsp;Catálogo</a><h1 class="my-4"><?= $product->name ?><br /></h1>
         <div class="row" style="margin-bottom: 10em;">
-            <div class="col-md-8"><img class="img-fluid" src="<?= 'assets/img/Products/'.$product->picture ?>" alt="<?= $product->name ?>"></div>
+            <div class="col d-flex d-sm-flex d-md-flex justify-content-center justify-content-sm-center justify-content-md-center"><img id="product-img" class="img-fluid" src="<?= 'assets/img/Products/'.$product->picture ?>" alt="<?= $product->name ?>"></div>
             <div class="col-md-4"><h3 class="my-3"><?= $product->name ?></h3><p><?= $product->description ?></p><h4 class="text-end">Precio: $<?=$product->price()?></h4>
-                <form action="add-to-cart.php"><input type="text" class="form-control" name="product_id" value="<?= $product->id ?>" hidden /><button class="btn btn-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button></form>
+                <form class="d-flex justify-content-center" action="add-to-cart.php" style="margin: 2em;"><input type="text" class="form-control" name="product_id" value="<?= $product->id ?>" hidden /><button class="btn btn-danger btn-lg" type="submit">Agregar al Carrito&nbsp;<i class="fa fa-shopping-cart"></i></button></form>
             </div>
         </div>
         <h3 class="my-4">Otros Productos<br></h3>
