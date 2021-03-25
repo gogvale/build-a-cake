@@ -19,16 +19,17 @@ class Product
         $this->picture = $picture;
     }
 
-    function id()
+    function id(): int
     {
         return $this->id;
     }
 
-    function image_full_path()
+    function image_full_path(): string
     {
         return $this::$path . $this->picture;
     }
-    function price(){
+    function price(): string
+    {
         return number_format($this->price,2,'.',',');
     }
 

@@ -36,19 +36,19 @@ class Product_list extends DB_Connect
         try {
             foreach($this->dbh->query("SELECT * FROM `{$this->table}` WHERE ID = $id") as $row) 
             {
-                $p = new Product(
+                return new Product(
                     $row['ID'],
                     $row['name'],
                     $row['description'],
                     $row['price'],
                     $row['picture']
                 );
-                return $p;
             }
         } catch(PDOException $e) {
             echo "Something went wrong. [Product_list]\n";
             die ("ERROR ". $e->getMessage().",". (int)$e->getCode());
         }
+        return [];
     }
 }
 

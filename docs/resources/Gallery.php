@@ -13,7 +13,7 @@ class Gallery{
     }
 
     
-    function list_images()
+    function list_images(): array
     {
         // Open a known directory, and proceed to read its contents
         $dir = $this->path;

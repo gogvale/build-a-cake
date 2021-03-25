@@ -16,16 +16,16 @@ class Cart
         setcookie($this->key, serialize($this));
     }
     
-    function size()
+    function size(): int
     {
         return count($this->items);
     }
-    function empty()
+    function empty(): bool
     {
         return count($this->items) == 0;
     }
 
-    function items()
+    function items(): array
     {
         return $this->items;
     }
@@ -35,12 +35,13 @@ class Cart
         $this->save_cookie();
     }
 
-    function total(){
+    function total(): string
+    {
         $price = function($value){
             return $value->price;
         };
 
-        return number_format(array_sum(array_map($price,$this->items)),2,'.',',');
+        return number_format(array_sum(array_map($price,$this->items)),2);
     }
 
     function remove_by_id($id){
@@ -55,8 +56,10 @@ class Cart
 
 
 
-    function name_price(){
-        function np($a){
+    function name_price(): array
+    {
+        function np($a): string
+        {
             return "- {$a->name} \${$a->price()}";
         }
         return array_map("np", $this->items);

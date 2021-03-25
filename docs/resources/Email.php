@@ -20,7 +20,7 @@ class Email
         $this->headers = implode("\r\n", $headers);
     }
 
-    function send_email()
+    function send_email(): bool
     {
         return mail($this->recipient, $this->subject, $this->body, $this->headers);
     }
