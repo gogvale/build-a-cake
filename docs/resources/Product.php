@@ -3,7 +3,7 @@
 class Product
 {
     public $id;
-    static $path = "/assets/img/Products/";
+    static $path = "./assets/img/Products/";
     public $name;
     public $description;
     public $price;
