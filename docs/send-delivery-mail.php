@@ -1,8 +1,11 @@
 <?php
 if(
     !isset($_POST['name']) ||
+    ctype_space($_POST['name']) ||
     !isset($_POST['phone']) ||
-    !isset($_POST['city']) 
+    ctype_space($_POST['phone']) ||
+    !isset($_POST['city']) ||
+    ctype_space($_POST['city']) 
 ) die("Ocurrió un problema, intenta nuevamente más tarde.");
 ?>
 

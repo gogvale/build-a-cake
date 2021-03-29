@@ -1,7 +1,10 @@
 <?php
+
 if(
     !isset($_POST['email']) ||
-    !isset($_POST['message']) 
+    ctype_space($_POST['email']) ||
+    !isset($_POST['message'])  ||
+    ctype_space($_POST['message']) 
 ) die("Ocurrió un error, intenta nuevamente más tarde.");
 ?>
 
