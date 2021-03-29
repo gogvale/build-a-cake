@@ -1,3 +1,11 @@
+<?php
+if(
+    !isset($_POST['email']) ||
+    !isset($_POST['message']) 
+) die("Ocurrió un error, intenta nuevamente más tarde.");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

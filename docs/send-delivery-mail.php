@@ -1,3 +1,13 @@
+<?php
+if(
+    !isset($_POST['name']) ||
+    !isset($_POST['phone']) ||
+    !isset($_POST['city']) 
+) die("Ocurrió un problema, intenta nuevamente más tarde.");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +50,6 @@ else
 
 $message =  sanitize_input($_POST['details']);
 $city_id =  sanitize_input($_POST['city']);
-
 
 
 $item_list = join(PHP_EOL,$cart->name_price());
