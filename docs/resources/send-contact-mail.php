@@ -1,7 +1,7 @@
 <?php
 
 if(
-    $_SERVER["REQUEST_METHOD"] == "POST" ||
+    $_SERVER["REQUEST_METHOD"] == "GET" ||
     empty($_POST['email']) ||
     empty($_POST['message'])
 ) die("Ocurrió un error, intenta nuevamente más tarde.");

@@ -1,6 +1,6 @@
 <?php
 if(
-    $_SERVER["REQUEST_METHOD"] == "POST" ||
+    $_SERVER["REQUEST_METHOD"] == "GET" ||
     empty($_POST['name']) ||
     empty($_POST['phone']) ||
     empty($_POST['city'])
