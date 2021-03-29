@@ -1,10 +1,9 @@
 <?php
 
 if(
-    !isset($_POST['email']) ||
-    ctype_space($_POST['email']) ||
-    !isset($_POST['message'])  ||
-    ctype_space($_POST['message']) 
+    $_SERVER["REQUEST_METHOD"] == "POST" ||
+    empty($_POST['email']) ||
+    empty($_POST['message'])
 ) die("Ocurrió un error, intenta nuevamente más tarde.");
 ?>
 

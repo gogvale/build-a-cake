@@ -1,11 +1,9 @@
 <?php
 if(
-    !isset($_POST['name']) ||
-    ctype_space($_POST['name']) ||
-    !isset($_POST['phone']) ||
-    ctype_space($_POST['phone']) ||
-    !isset($_POST['city']) ||
-    ctype_space($_POST['city']) 
+    $_SERVER["REQUEST_METHOD"] == "POST" ||
+    empty($_POST['name']) ||
+    empty($_POST['phone']) ||
+    empty($_POST['city'])
 ) die("Ocurrió un problema, intenta nuevamente más tarde.");
 ?>
 
